@@ -1,27 +1,25 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 import Applayout from './layout/app-layout';
-import LandingPage from './pages/landingpage';
-import Onboarding from './pages/onboarding';
+import LandingPage from './pages/landing';
+
 
 const router = createBrowserRouter([
   {
     element: <Applayout />,
-    childern: [
+    children: [
       {
-        path:"/",
-        element: <LandingPage />,
-      },
-      {
-        path:"/onboarding",
-        element: <Onboarding />,
+        path: "/",
+        element: <LandingPage />
       },
     ],
   },
-]),
+]);
 
 function App() {
-  return <RouterProvider router={router}/>;
+  return (
+  <RouterProvider router={router}/>
+);
 }
 
 export default App;
