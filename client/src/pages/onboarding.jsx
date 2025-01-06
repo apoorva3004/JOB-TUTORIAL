@@ -1,6 +1,9 @@
-const Onboarding = () => {
-  return
-    <div>Onboarding</div>;
-};
+import React from 'react'
 
-export default Onboarding;
+const Onboarding = () => {
+  return (
+    <div>Onboarding</div>
+  )
+}
+
+export default Onboarding
